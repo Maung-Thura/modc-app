@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/txtTodayDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/divider"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="202dp"
+        android:layout_height="175dp"
+        android:src="@drawable/mahamuni"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="210dp"
+        android:layout_height="175dp"
+        android:gravity="center"
+        android:text="မြောက်ဉီးဓမ္မစင်တာမှကြိုဆိုပါ၏။"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="14dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/txtTodayDate"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:id="@+id/txtSound"
+        android:layout_width="170dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:paddingStart="5dp"
+        android:text="အသံ (Audio)"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtTodayDate"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/txtVideo"
+        android:layout_width="169dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:paddingStart="5dp"
+        android:text="ဗီဒီယို (Video)"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtSound"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/txtBook"
+        android:layout_width="247dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:paddingStart="5dp"
+        android:text="တရားစာအုပ် (Dhamma Books)"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtVideo"
+        tools:layout_editor_absoluteX="32dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_sound"
+        android:icon="@android:drawable/ic_lock_silent_mode_off"
+        android:title="အသံ" />
+
+    <item
+        android:id="@+id/navigation_video"
+        android:icon="@android:drawable/ic_menu_slideshow"
+        android:title="ဗီဒီယို" />
+
+    <item
+        android:id="@+id/navigation_book"
+        android:icon="@android:drawable/ic_input_get"
+        android:title="တရားစာအုပ်" />
+
+</menu>
